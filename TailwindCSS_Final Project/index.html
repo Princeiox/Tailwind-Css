@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Responsive design for small, medium, and large devices">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Tailwind CSS, Modern UI, Glassmorphism">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NexGen | Premium Template</title>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+    <!-- Header -->
+    <header class="glass-header fixed w-full z-50 top-0 transition-all duration-300">
+        <div class="container mx-auto flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-2 cursor-pointer group">
+                <div class="bg-indigo-500/20 p-2 rounded-lg border border-indigo-500/30 group-hover:bg-indigo-500/40 transition-all">
+                    <i class="fas fa-robot text-2xl text-indigo-400 group-hover:text-indigo-300 group-hover:rotate-12 transition-transform duration-300"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight px-2 text-white">NexGen<span class="text-indigo-400">.io</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-1">
+                <a href="#" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">Home</a>
+                <a href="#" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">Features</a>
+                <a href="#" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-full transition-all">About Us</a>
+                <a href="#" class="ml-4 px-6 py-2 text-sm font-semibold btn-primary text-white rounded-full transition-all hover:-translate-y-0.5">Contact Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none p-2 rounded-lg hover:bg-white/5">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-slate-800/95 backdrop-blur-xl border-t border-white/10 hidden absolute w-full shadow-2xl" id="mobile-menu">
+             <ul class="px-6 py-4 space-y-2">
+                 <li><a href="#" class="block py-2 text-slate-300 hover:text-white hover:pl-2 transition-all">Home</a></li>
+                 <li><a href="#" class="block py-2 text-slate-300 hover:text-white hover:pl-2 transition-all">Features</a></li>
+                 <li><a href="#" class="block py-2 text-slate-300 hover:text-white hover:pl-2 transition-all">About</a></li>
+                 <li><a href="#" class="block py-3 mt-2 text-center text-white font-semibold btn-primary rounded-lg transition-all">Contact Us</a></li>
+             </ul>
+         </div>
+     </header>
+
+     <!-- Hero Section -->
+     <section class="bg-hero-gradient min-h-screen flex items-center pt-24 pb-16 relative">
+         <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] [mask-image:linear-gradient(to_bottom,white,transparent)] z-0"></div>
+         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+             <div class="order-2 md:order-1 fade-in-up">
+                 <div class="inline-block px-4 py-1.5 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-6">
+                     ✨ Discover the future of design
+                 </div>
+                 <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-white drop-shadow-sm">
+                     Elevate Your Vision With <span class="text-gradient">Next-Gen</span> Design
+                 </h1>
+                 <p class="text-slate-400 text-lg mb-8 leading-relaxed max-w-xl">
+                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Experience a highly curated, premium visual aesthetic designed to maximize user engagement.
+                 </p>
+                 <div class="flex flex-wrap gap-4">
+                     <button class="btn-primary text-white px-8 py-3.5 rounded-full text-base font-semibold transition-all group flex items-center gap-3">
+                         Get Started
+                         <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                     </button>
+                     <button class="px-8 py-3.5 rounded-full text-base font-semibold border border-slate-600 bg-slate-800/50 hover:bg-slate-700 hover:border-slate-500 transition-all text-white flex items-center gap-3">
+                         <i class="fas fa-play text-xs text-indigo-400"></i> Watch Demo
+                     </button>
+                 </div>
+            </div>
+            <div class="order-1 md:order-2 fade-in-up delay-200">
+                 <div class="image-wrapper animate-float">
+                     <img src="image1.jpg" alt="Hero Image" class="w-full h-auto">
+                     <!-- Floating Element overlay -->
+                     <div class="absolute -bottom-6 -left-6 bg-slate-800/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-float-delayed hidden sm:flex">
+                         <div class="bg-indigo-500/20 p-3 rounded-full text-indigo-400">
+                             <i class="fas fa-chart-line text-xl"></i>
+                         </div>
+                         <div>
+                             <p class="text-sm text-slate-400 font-medium">Growth Rate</p>
+                             <p class="text-white font-bold text-lg">+145%</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Second Section -->
+    <section class="bg-slate-900 py-24 relative border-t border-white/5 overflow-hidden">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="fade-in-up">
+                <div class="image-wrapper animate-float-delayed">
+                    <img src="image2.jpg" alt="Features Image" class="w-full h-auto">
+                    <!-- Floating Element overlay -->
+                     <div class="absolute -top-6 -right-6 bg-slate-800/90 backdrop-blur-md border border-white/10 p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-float hidden sm:flex">
+                         <div class="bg-emerald-500/20 p-3 rounded-full text-emerald-400">
+                             <i class="fas fa-shield-alt text-xl"></i>
+                         </div>
+                         <div>
+                             <p class="text-sm text-slate-400 font-medium">Security</p>
+                             <p class="text-white font-bold text-lg">Fully Secured</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class="fade-in-up delay-200">
+                <h2 class="text-4xl font-bold mb-6 text-white tracking-tight">
+                    Built for <span class="text-gradient-2">Performance</span>
+                </h2>
+                <p class="text-slate-400 mb-6 text-lg leading-relaxed">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center gap-3 text-slate-300 bg-white/5 p-3 rounded-xl border border-white/5 w-fit pr-8">
+                        <i class="fas fa-check-circle text-emerald-400 text-lg"></i> Seamless Integration
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-300 bg-white/5 p-3 rounded-xl border border-white/5 w-fit pr-8">
+                        <i class="fas fa-bolt text-amber-400 text-lg ml-0.5"></i> Lightning Fast Speeds
+                    </li>
+                    <li class="flex items-center gap-3 text-slate-300 bg-white/5 p-3 rounded-xl border border-white/5 w-fit pr-8">
+                        <i class="fas fa-layer-group text-purple-400 text-lg"></i> Highly Customizable
+                    </li>
+                </ul>
+                <button class="btn-secondary text-white px-8 py-3.5 rounded-full text-base font-semibold transition-all group flex items-center gap-3 w-fit">
+                    Explore Features
+                    <i class="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-24 bg-slate-950 relative border-t border-white/5">
+        <!-- Abstract glowing orb behind features -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-[500px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="text-4xl font-bold mb-4 text-white">Powerful <span class="text-gradient">Capabilities</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">Everything you need to build stunning, high-performance experiences.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Feature 1 -->
+                <div class="text-center p-8 rounded-2xl feature-box feature-music fade-in-up delay-100">
+                    <div class="w-16 h-16 mx-auto bg-slate-800/80 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-music text-2xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Audio</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High fidelity processing and flawless streaming capabilities.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-8 rounded-2xl feature-box feature-download fade-in-up delay-200">
+                    <div class="w-16 h-16 mx-auto bg-slate-800/80 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-download text-2xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Downloads</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Lightning fast robust delivery via global edge networks.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-8 rounded-2xl feature-box feature-camera fade-in-up delay-300">
+                    <div class="w-16 h-16 mx-auto bg-slate-800/80 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-camera text-2xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Media</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Automated image optimization and rich media handling.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-8 rounded-2xl feature-box feature-wifi fade-in-up delay-400">
+                    <div class="w-16 h-16 mx-auto bg-slate-800/80 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-wifi text-2xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Connect</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Constant uptime with resilient distributed architecture.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="text-center p-8 rounded-2xl feature-box feature-location fade-in-up delay-400">
+                    <div class="w-16 h-16 mx-auto bg-slate-800/80 rounded-2xl flex items-center justify-center mb-6 border border-white/5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-location-dot text-2xl relative z-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Global</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Reach your audience wherever they are with low latency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-white/10 pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Branding -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6 cursor-pointer">
+                        <i class="fas fa-robot text-2xl text-indigo-400"></i>
+                        <span class="text-xl font-bold text-white">NexGen<span class="text-indigo-400">.io</span></span>
+                    </div>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Crafting digital experiences that define the future. We merge design and technology seamlessly.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Princeiox" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700 hover:-translate-y-1 transition-all border border-white/5">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-indigo-500 hover:-translate-y-1 transition-all border border-white/5">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:-translate-y-1 transition-all border border-white/5">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Product</h4>
+                    <ul class="space-y-4 text-sm footer-links text-slate-400">
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Features</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Integrations</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Pricing</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Changelog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Resources</h4>
+                    <ul class="space-y-4 text-sm footer-links text-slate-400">
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Documentation</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Community</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 3 -->
+                <div>
+                    <h4 class="font-bold text-white mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm footer-links text-slate-400">
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Careers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right text-[10px] opacity-0 -ml-3 transition-all duration-300"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-white/10 flex justify-center items-center text-sm text-slate-500">
+                <p>© 2026. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .footer-links a:hover i {
+            opacity: 1;
+            transform: translateX(3px);
+            margin-right: 2px;
+        }
+    </style>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.style.animation = 'fadeInUp 0.3s ease forwards';
+            } else {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Apply 'paused' by default so they only run when scrolled into view
+        document.querySelectorAll('.fade-in-up').forEach((el) => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+
+        // Add blur to header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-xl', 'bg-slate-900/95');
+                header.classList.remove('bg-slate-900/70');
+            } else {
+                header.classList.remove('shadow-xl', 'bg-slate-900/95');
+                header.classList.add('bg-slate-900/70');
+            }
+        });
+    </script>
+</body>
+</html>
